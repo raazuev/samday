@@ -1,0 +1,23 @@
+.footer
+    background-color: #f2f3f7
+    min-height: 273px
+    align-content: center
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 40px
+        .footer__logo
+            @include logo
+        .footer__menu
+            display: flex
+            gap: 10vh
+            a
+                @include link
+                margin: 0
+        .footer__descr
+            h3
+                font-family: Futura-Book
+                font-size: 14px
+                font-weight: 400
+                line-height: 18px

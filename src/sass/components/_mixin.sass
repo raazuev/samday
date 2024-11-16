@@ -1,0 +1,79 @@
+@mixin link
+    cursor: pointer
+    font-family: Futura-Book
+    margin-left: 40px
+    text-decoration: none
+    color: #2F2222
+    font-size: 18px
+    font-weight: 400
+    line-height: 23px
+    transition: all .4s ease
+    &:hover
+        color: #5D71DD
+        border-bottom: 1px solid #5D71DD
+@mixin phone
+    font-family: Futura-Book
+    font-weight: 500
+    color: #5D71DD
+    position: relative
+    &:hover
+        border: none
+    &::before
+        position: absolute
+        content: url('../img/main/phone.svg')
+        left: -22px
+        transition: transform .4s ease
+    &:hover::before
+        transform: scale(1.2)
+@mixin logo
+    cursor: pointer
+    min-width: 48px
+    min-height: 48px
+    border-radius: 100%
+    background-color: #5D71DD
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        min-width: 25px
+        min-height: 25px
+        border-radius: 100%
+        background-color: #FFFFFF
+        top: 23px
+        left: 23px
+        box-shadow: 1px 1px 6px 3px #3946882E
+        transition: transform 0.5s ease
+    &:hover::after
+        transform: translateX(10px)
+@mixin title_card
+    font-family: Futura-Book
+    font-size: 24px
+    font-weight: 450
+    line-height: 30px
+@mixin subtitle_card 
+    font-family: Futura
+    font-size: 18px
+    font-weight: 400
+    line-height: 23px
+@mixin small_card
+    font-family: Futura
+    font-size: 16px
+    font-weight: 400
+    line-height: 20px
+@mixin button
+    cursor: pointer
+    font-family: Futura
+    font-size: 16px
+    font-weight: 400
+    line-height: 20px
+    color: #5D71DD
+    border: none
+    border-radius: 8px
+    height: 37px
+    width: 100%
+    padding: 8px 16px
+    white-space: nowrap
+
+    
+
+    

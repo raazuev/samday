@@ -1,0 +1,41 @@
+.header
+    background-color: #FFFFFF
+    height: 70px
+    align-content: center
+    overflow: hidden
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 1000
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+    transition: all .5s ease
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .header__logo
+            @include logo
+        .header__burger
+            display: none
+            flex-direction: column
+            justify-content: space-around
+            width: 50px
+            height: 27px
+            background: transparent
+            border: none
+            cursor: pointer
+            z-index: 1001
+            span
+                display: block
+                width: 100%
+                height: 1px
+                background: #333
+        .header__menu
+            display: flex
+            a
+                @include link
+            .header__phone
+                @include phone
+.hidden
+    transition: all .5s ease
+    top: -350px
