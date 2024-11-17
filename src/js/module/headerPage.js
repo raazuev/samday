@@ -19,7 +19,7 @@ export function initHeader() {
         preScrollPos = currentScrollPos;
     };
 
-    // BURGER-MENU
+    //BURGER-MENU
     const burgerMenu = document.querySelector('.header__burger');
     const menu = document.querySelector('.header__menu');
 
@@ -27,4 +27,19 @@ export function initHeader() {
         menu.classList.toggle('active');
     });
 
+    //LINK
+    document.getElementById('header').addEventListener('click', (e) => {
+        if (e.target.id === 'contactsLink') {
+            e.preventDefault();
+            import('./contactsPage.js').then(module => {
+                module.initContacts();
+            });
+        } else if (e.target.id === 'homeLink') {
+            e.preventDefault();
+            import('./mainPage.js').then(module => {
+                module.initMain();
+            });
+        }
+    });
+    
 }

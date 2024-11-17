@@ -284,17 +284,7 @@
                     button
                         @include button_form
                     .sub__img
-                        position: relative
-                        &::after
-                            content: ''
-                            position: absolute
-                            top: 50%
-                            right: 20%
-                            transform: translateY(-50%)
-                            background: url('../img/main/arrow.svg') no-repeat 
-                            background-size: contain
-                            width: 20px
-                            height: 20px
+                        @include button__arrow
         .main__slider
             margin-top: 80px
             display: flex

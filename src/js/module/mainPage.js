@@ -1,6 +1,11 @@
 export function initMain() {
     const showMoreButton = document.getElementById('showMore');
 
+    if (!showMoreButton) {
+        console.warn('Элемент с ID "showMore" не найден. Проверьте структуру HTML.');
+        return;
+    }
+
     const updateButtonText = () => {
         const currentlyHiddenCards = document.querySelectorAll('.main__item:not(.show)');
         const remainingCount = currentlyHiddenCards.length;

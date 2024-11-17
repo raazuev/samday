@@ -14,7 +14,7 @@ export async function initPage() {
             loadModule('page/main/header.html', 'header'),
             loadModule('page/main/category.html', 'category'),
             loadModule('page/main/main.html', 'main'),
-            loadModule('page/main/footer.html', 'footer')
+            loadModule('page/main/footer.html', 'footer'),
         ]);
     } catch (error) {
         console.error('Ошибка при загрузке модулей:', error);

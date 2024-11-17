@@ -7,5 +7,5 @@ window.addEventListener('DOMContentLoaded', async function() {
     await initPage();
     initHeader();
     initMain();
-
+    
 });

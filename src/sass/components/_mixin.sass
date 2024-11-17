@@ -25,6 +25,20 @@
         transition: transform .4s ease
     &:hover::before
         transform: scale(1.2)
+@mixin address
+    font-family: Futura-Book
+    font-weight: 500
+    color: #5D71DD
+    position: relative
+    &:hover
+        border: none
+    &::before
+        position: absolute
+        content: url('../img/contacts/location.svg')
+        left: -22px
+        transition: transform .4s ease
+    &:hover::before
+        transform: scale(1.2)
 @mixin logo
     cursor: pointer
     min-width: 48px
@@ -45,6 +59,11 @@
         transition: transform 0.5s ease
     &:hover::after
         transform: translateX(10px)
+@mixin title_contact 
+    font-family: Futura-Book
+    font-size: 30px
+    font-weight: 400
+    line-height: 38px
 @mixin title_card
     font-family: Futura-Book
     font-size: 24px
@@ -86,10 +105,18 @@
     @include subtitle_card
     position: relative
     color: #fff
-    &:hover
-        img
-            transition: transform .5s ease
-            transform: translateX(5px)
+@mixin button__arrow
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        right: 20%
+        transform: translateY(-50%)
+        background: url('../img/main/arrow.svg') no-repeat 
+        background-size: contain
+        width: 20px
+        height: 20px
 @mixin input_form
     border: none
     border-radius: 20px
