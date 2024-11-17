@@ -238,6 +238,10 @@
         .main__sidebar
             grid-column: 2
             .main__news
+                .news__descr
+                    display: flex
+                    flex-direction: column
+                    gap: 2vh
                 h3
                     @include title_card
                     margin-bottom: 20px
@@ -279,7 +283,18 @@
                         @include input_form
                     button
                         @include button_form
-                        img: url('/img/main/arrow.svg')
+                    .sub__img
+                        position: relative
+                        &::after
+                            content: ''
+                            position: absolute
+                            top: 50%
+                            right: 20%
+                            transform: translateY(-50%)
+                            background: url('../img/main/arrow.svg') no-repeat 
+                            background-size: contain
+                            width: 20px
+                            height: 20px
         .main__slider
             margin-top: 80px
             display: flex
