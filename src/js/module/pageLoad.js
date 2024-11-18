@@ -1,5 +1,4 @@
 export async function initPage() {
-
     const loadModule = async (url, elementId) => {
         const response = await fetch(url);
         if (!response.ok) {
