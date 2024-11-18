@@ -15,30 +15,8 @@
     font-family: Futura-Book
     font-weight: 500
     color: #5D71DD
-    position: relative
     &:hover
-        border: none
-    &::before
-        position: absolute
-        content: url('../img/main/phone.svg')
-        left: -22px
-        transition: transform .4s ease
-    &:hover::before
-        transform: scale(1.2)
-@mixin address
-    font-family: Futura-Book
-    font-weight: 500
-    color: #5D71DD
-    position: relative
-    &:hover
-        border: none
-    &::before
-        position: absolute
-        content: url('../img/contacts/location.svg')
-        left: -22px
-        transition: transform .4s ease
-    &:hover::before
-        transform: scale(1.2)
+        color: rgba(47, 34, 34, 0.4)
 @mixin logo
     cursor: pointer
     min-width: 48px

@@ -3,7 +3,7 @@
     min-height: 737px
     &__content
         display: grid
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
         grid-template-rows: 100px 500px 100px
         justify-content: center
         align-items: center
@@ -20,10 +20,14 @@
                 display: flex
                 flex-direction: column
                 gap: 20px
-                .phone-cont
+                a
                     @include phone
+                .phone-cont
+                    background: url('../img/main/phone.svg') no-repeat
+                    padding-left: 20px
                 .address-cont
-                    @include address
+                    background: url('../img/contacts/location.svg') no-repeat
+                    padding-left: 20px
             .icon__inner
                 display: flex
                 gap: 20px

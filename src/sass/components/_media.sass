@@ -55,18 +55,32 @@
                     padding: 50px 148px
     .contacts
         .contacts__content
+            display: grid
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
             gap: 30px
             .contacts__form
+                grid-column: 1
+            .contacts__form
+                grid-column: 2
+                min-height: 400px
 @media (max-width: 685px)
     .container
         max-width: 600px
     .contacts
-        padding: 100px
+        padding: 100px 0 100px 0
         .contacts__content
-            display: flex
-            flex-direction: column
-            gap: 30px
+            display: grid
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+            grid-template-rows: repeat(2, 1fr)
+            .contacts__descr
+                grid-column: 1 span
+                grid-row: 1
             .contacts__form
+                width: 100%
+                grid-column: 1 span
+                grid-row: 2
+                input
+                    max-width: 400px
     .main
         .main__content
             grid-template-columns: 1fr
@@ -112,5 +126,9 @@
                     font-size: 12px
     .contacts
         padding: 80px
+        .contacts__content
+            .contacts__form
+                input
+                    width: 200px
 
             

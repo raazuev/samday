@@ -16,13 +16,13 @@ export async function initContacts() {
 export async function hideCategory() {
     const categoryElement = document.getElementById('category');
     if (categoryElement) {
-        categoryElement.classList.add('hidden');
+        categoryElement.classList.add('contHidden');
     }
 }
 
 export async function showCategory() {
     const categoryElement = document.getElementById('category');
     if (categoryElement) {
-        categoryElement.classList.remove('hidden');
+        categoryElement.classList.remove('contHidden');
     }
 }
