@@ -95,8 +95,8 @@
         background-size: contain
         width: 20px
         height: 20px
-@mixin input_form
-    font-family: Futura
+@mixin input_form 
+    font-family: Futura, sans-serif
     border: none
     border-radius: 20px
     background-color: #F5F5F5
@@ -104,23 +104,30 @@
     height: 49px
     padding: 13px 30px
     cursor: pointer
-    ::-webkit-input-placeholder
-        font-family: Futura
-    :-moz-placeholder
-        font-family: Futura
-    ::-moz-placeholder
-        font-family: Futura
-    :-ms-input-placeholder
-        font-family: Futura
-    &:focus
-        outline: none
     &::placeholder
         font-family: Futura, sans-serif
         font-size: 14px
-        position: absolute
-        z-index: 2
-        transition: all .5s ease
-    &:focus::placeholder
+        color: #888
+        transition: all 0.5s ease
+    &:-webkit-input-placeholder
+        font-family: Futura, sans-serif
+        font-size: 14px
+        color: #888
+    &:-moz-placeholder
+        font-family: Futura, sans-serif
+        font-size: 14px
+        color: #888
+    &::-moz-placeholder 
+        font-family: Futura, sans-serif
+        font-size: 14px
+        color: #888
+    &:-ms-input-placeholder
+        font-family: Futura, sans-serif
+        font-size: 14px
+        color: #888
+    &:focus
+        outline: none
+    &:focus::placeholder 
         font-size: 10px
         transform: translateY(-10px)
     
