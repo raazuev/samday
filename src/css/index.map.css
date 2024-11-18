@@ -594,30 +594,40 @@ img {
   outline: none;
 }
 .main__content .main__sidebar .main__subscription form input::-webkit-input-placeholder {
+  font-family: Futura, sans-serif;
+  font-size: 14px;
   position: absolute;
   z-index: 2;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .main__content .main__sidebar .main__subscription form input::-moz-placeholder {
+  font-family: Futura, sans-serif;
+  font-size: 14px;
   position: absolute;
   z-index: 2;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .main__content .main__sidebar .main__subscription form input:-ms-input-placeholder {
+  font-family: Futura, sans-serif;
+  font-size: 14px;
   position: absolute;
   z-index: 2;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .main__content .main__sidebar .main__subscription form input::-ms-input-placeholder {
+  font-family: Futura, sans-serif;
+  font-size: 14px;
   position: absolute;
   z-index: 2;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .main__content .main__sidebar .main__subscription form input::placeholder {
+  font-family: Futura, sans-serif;
+  font-size: 14px;
   position: absolute;
   z-index: 2;
   -webkit-transition: all 0.5s ease;
@@ -933,30 +943,40 @@ img {
   outline: none;
 }
 .contacts__content .contacts__form form input::-webkit-input-placeholder {
+  font-family: Futura, sans-serif;
+  font-size: 14px;
   position: absolute;
   z-index: 2;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .contacts__content .contacts__form form input::-moz-placeholder {
+  font-family: Futura, sans-serif;
+  font-size: 14px;
   position: absolute;
   z-index: 2;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .contacts__content .contacts__form form input:-ms-input-placeholder {
+  font-family: Futura, sans-serif;
+  font-size: 14px;
   position: absolute;
   z-index: 2;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .contacts__content .contacts__form form input::-ms-input-placeholder {
+  font-family: Futura, sans-serif;
+  font-size: 14px;
   position: absolute;
   z-index: 2;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .contacts__content .contacts__form form input::placeholder {
+  font-family: Futura, sans-serif;
+  font-size: 14px;
   position: absolute;
   z-index: 2;
   -webkit-transition: all 0.5s ease;
