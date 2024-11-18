@@ -1,0 +1,47 @@
+.oneNews
+    min-height: 1665px
+    padding: 100px 0 100px 0
+    &__content
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(650px, auto))
+        grid-template-rows: 300px auto
+        .oneNews__bg
+            grid-column: 2 span
+            grid-row: 1
+            background: url('../img/news/onenews.jpg') no-repeat center / contain
+        .oneNews__inner
+            grid-column: 1
+            grid-row: 2
+            display: flex
+            flex-direction: column
+            padding-top: 50px
+            gap: 30px
+            .oneNews__descr
+                button
+                    @include button
+                    max-width: 111px
+                    transition: .6s ease
+                    &:hover
+                        transform: scale(1.07)
+                span
+                    @include small_card
+            .oneNews__title
+                h2
+                    @include title_contact 
+            .oneNews__subtitle
+                p
+                    @include subtitle_card 
+            .oneNews__img
+                img
+                p
+                    @include small_card
+            .oneNews__show
+                background: url('../img/news/onenews-show.png') no-repeat center / contain
+                min-height: 300px
+                width: 100%
+            .oneNews__btn
+                display: flex
+                gap: 50px
+                button
+                    min-width: 100px
+                    @include button
