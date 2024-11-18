@@ -581,6 +581,7 @@ img {
   gap: 20px;
 }
 .main__content .main__sidebar .main__subscription form input {
+  font-family: Futura;
   border: none;
   border-radius: 20px;
   background-color: #F5F5F5;
@@ -919,6 +920,7 @@ img {
   gap: 20px;
 }
 .contacts__content .contacts__form form input {
+  font-family: Futura;
   border: none;
   border-radius: 20px;
   background-color: #F5F5F5;
@@ -1110,7 +1112,7 @@ img {
   }
   .contacts .contacts__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-rows: repeat(2, 1fr);
   }
   .contacts .contacts__content .contacts__descr {
@@ -1200,6 +1202,6 @@ img {
     padding: 20px;
   }
   .contacts .contacts__content {
-    padding: 0;
+    padding-bottom: 30px;
   }
 }
