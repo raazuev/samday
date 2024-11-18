@@ -15,6 +15,60 @@
         align-items: center
         .header__logo
             @include logo
+        .switch
+            position: relative
+            display: inline-block
+            width: 60px
+            height: 34px
+            input
+                opacity: 0
+                width: 0
+                height: 0
+            .slideSwitch
+                position: absolute
+                cursor: pointer
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                background-color: #ccc
+                border-radius: 20px
+                -webkit-transition: 0.4s
+                transition: 0.4s
+                &:before
+                    position: absolute
+                    content: ""
+                    border-radius: 20px
+                    height: 40px
+                    width: 40px
+                    left: 0px
+                    bottom: 4px
+                    top: 0
+                    bottom: 0
+                    margin: auto 0
+                    -webkit-transition: 0.4s
+                    transition: 0.4s
+                    box-shadow: 0 0px 15px #2020203d
+                    background: white
+                    background-repeat: no-repeat
+                    background-position: center
+            input
+                &:checked + .slideSwitch
+                    border-radius: 20px
+                    background-color: #2196f3
+
+                &:focus + .slideSwitch
+                    box-shadow: 0 0 1px #2196f3
+                &:checked + .slideSwitch:before
+                    -webkit-transform: translateX(24px)
+                    -ms-transform: translateX(24px)
+                    transform: translateX(24px)
+                    background: white
+                    background-repeat: no-repeat
+                    background-position: center
+                .slideSwitch.round
+                &:before
+                    border-radius: 50%
         .header__burger
             display: none
             flex-direction: column
@@ -42,3 +96,8 @@
 .hidden
     transition: all .5s ease
     top: -350px
+body.dark-theme
+    .header
+        background-color: rgba(47, 34, 34, 0.4)
+        a
+            color: white
